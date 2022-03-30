@@ -1,2 +1,2 @@
 <?php
-include './static/page.php';
+include './assets/page.php';

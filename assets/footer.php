@@ -7,7 +7,7 @@ class Footer {
         $this->page = $page;
     }
 
-    public function getFooter() {
+    public function setFooter() {
         $page = $this->page;
     }
 }
