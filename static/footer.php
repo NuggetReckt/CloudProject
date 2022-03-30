@@ -1,12 +1,14 @@
 <?php
+/**
+ * @param $page Page
+ */
 class Footer {
     function __construct($page) {
         $this->page = $page;
     }
 
-    public function getFooter () {
+    public function getFooter() {
         $page = $this->page;
-        require_once './static/footer.php';
     }
 }
 ?>

@@ -1,4 +1,7 @@
 <?php
+/**
+ * @param $page Page
+ */
 class Header {
     function __construct($page) {
         $this->page = $page;
@@ -6,7 +9,6 @@ class Header {
 
     public function getHeader() {
         $page = $this->page;
-        require_once './static/header.php';
     }
 }
 ?>

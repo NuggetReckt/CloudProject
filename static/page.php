@@ -1,18 +1,20 @@
 <?php
 class Page {
-    function __construct($page) {
+    function __construct($page, $footer=true, $header=true) {
         $this->page = $page;
         ini_set('default_charset', 'utf-8');
-    }
 
-    function getHeader() {
         require_once './static/header.php';
-        $this->Header = new Header($this);
-    }
+        $this->header = new Header($this);
+        if ($header) {
+            $this->header->getHeader();
+        }
 
-    function getFooter() {
         require_once './static/footer.php';
-        $this->Footer = new Footer($this);
+        $this->footer = new Footer($this);
+        if ($footer) {
+            $this->footer->getFooter();
+        }
+        echo 'test';
     }
-
 }
