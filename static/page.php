@@ -16,7 +16,7 @@ class Page {
         if ($container_start) {
             echo '<div class="container">';
         }
-        echo "";
+        echo "$class";
         if ($container_start) {
             echo '';
         }
