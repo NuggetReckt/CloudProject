@@ -1,16 +1,11 @@
-<?php
-require_once "page.php";
-class Header {
-    function __construct() {
-
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title><?php ?></title>
+    <?php
+    require_once "page.php";
+        $page->setTitle();
+    ?>
 </head>
 
     <body>
