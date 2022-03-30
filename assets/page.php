@@ -1,19 +1,12 @@
 <?php
+require_once "header.php";
+require_once "footer.php";
 class Page {
-    function __construct($footer=true, $header=true) {
+    function __construct($name, $header = true)
+    {
         ini_set('default_charset', 'utf-8');
 
-        require_once './assets/header.php';
-        $this->header = new Header($this);
-        if ($header) {
-            $this->header->setHeader();
-        }
-
-        require_once './assets/footer.php';
-        $this->footer = new Footer($this);
-        if ($footer) {
-            $this->footer->setFooter();
-        }
-        echo 'test';
+        $this->name = $name;
+        $this->title = null;
     }
 }
