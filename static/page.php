@@ -16,18 +16,16 @@ class Page {
         if ($container_start) {
             echo '<div class="container">';
         }
-
-        echo "<div class=\"row\"><div class=\"col-lg-12\"><h1 class=\"$class\"></div>";
+        echo "";
         if ($container_start) {
-            echo '</div><div class="row"><div class="col-lg-12">';
+            echo '';
         }
     }
 
     function print_footer($container_end = true) {
         if ($container_end) {
-            echo "</div></div>";
+            echo "</div>";
         }
-
         require_once './static/footer.php';
     }
 
