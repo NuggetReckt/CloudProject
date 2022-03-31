@@ -6,11 +6,11 @@ ul {
     background-color: #2e81e2;
 }
 
-li {
+#navbar-content {
     float: left;
 }
 
-li a {
+#navbar-content a {
     transition: 0.5s;
     display: block;
     color: white;
@@ -20,7 +20,7 @@ li a {
     font-family: police_custom_2, serif;
 }
 
-li a:hover {
+#navbar-content a:hover {
     transition: 0.5s;
     background-color: black;
     color: #2e81e2;
@@ -35,9 +35,13 @@ li a:hover {
     margin: 0;
     padding: 0;
     background-color: black;
-    position: fixed;
     bottom: 0;
 }
+
+#footer-content {
+    text-align: center;
+}
+
 
 @font-face {
     font-family: police_custom;

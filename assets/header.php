@@ -1,17 +1,3 @@
-<?php
-
-class Header
-{
-    /**
-     * @param $page Page
-     */
-    function __construct($page)
-    {
-        $this->page = $page;
-        $this->title = null;
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
