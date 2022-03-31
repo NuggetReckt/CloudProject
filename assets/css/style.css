@@ -6,11 +6,11 @@ ul {
     background-color: #2e81e2;
 }
 
-#navbar-content {
+.navbar-content {
     float: left;
 }
 
-#navbar-content a {
+.navbar-content a {
     transition: 0.5s;
     display: block;
     color: white;
@@ -20,15 +20,22 @@ ul {
     font-family: police_custom_2, serif;
 }
 
-#navbar-content a:hover {
+.navbar-content a:hover {
     transition: 0.5s;
     background-color: black;
     color: #2e81e2;
 }
 
-.name {
-    float: left;
+#name, #update {
     border-right: 1px solid #FFFF;
+}
+
+#register {
+    border-left: 1px solid #FFFF;
+}
+
+#login, #register {
+    float: right;
 }
 
 #footer {
@@ -41,7 +48,6 @@ ul {
 #footer-content {
     text-align: center;
 }
-
 
 @font-face {
     font-family: police_custom;

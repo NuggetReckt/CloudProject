@@ -14,14 +14,20 @@
     <div id="navbar">
         <nav>
             <ul>
-                <li id="navbar-content" class="name">
+                <li class="navbar-content" id="name">
                     <a href="<?php echo ("index.php")?>">CloudProject</a>
                 </li>
-                <li id="navbar-content">
-                    <a href="<?php echo ("lien2.php")?>"></a>
+                <li class="navbar-content" id="update">
+                    <a href="<?php echo ("upload.php")?>">Upload</a>
                 </li>
-                <li id="navbar-content">
-                    <a href="<?php echo ("lien3.php")?>"></a>
+                <li class="navbar-content" id="about">
+                    <a href="<?php echo ("about.php")?>">About</a>
+                </li>
+                <li class="navbar-content" id="register">
+                    <a href="<?php echo ("register.php")?>">Register</a>
+                </li>
+                <li class="navbar-content" id="login">
+                    <a href="<?php echo ("login.php")?>">Login</a>
                 </li>
             </ul>
         </nav>
