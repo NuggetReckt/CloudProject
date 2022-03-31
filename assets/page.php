@@ -2,7 +2,7 @@
 require_once "header.php";
 require_once "footer.php";
 class Page {
-    function __construct($name, $title)
+    function __construct($title, $name)
     {
         ini_set('default_charset', 'utf-8');
 
@@ -14,7 +14,7 @@ class Page {
         $title = $this->title;
         $name = $this->name;
 
-        $name = "$name - $title";
+        $name = "$title - $name";
         echo "<title>$name</title>";
     }
 }

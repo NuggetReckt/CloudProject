@@ -28,17 +28,17 @@ class Header
     <div id="navbar">
         <nav>
             <ul>
-                <li>
-                    <a href="<?php echo ("lien1.php")?>">lien 1</a>
+                <li id="navbar-content" class="name">
+                    <a href="<?php echo ("index.php")?>">CloudProject</a>
                 </li>
-                <li>
-                    <a href="<?php echo ("lien2.php")?>">lien 2</a>
+                <li id="navbar-content">
+                    <a href="<?php echo ("lien2.php")?>"></a>
                 </li>
-                <li>
-                    <a href="<?php echo ("lien3.php")?>">lien 3</a>
+                <li id="navbar-content">
+                    <a href="<?php echo ("lien3.php")?>"></a>
                 </li>
-                <li>
-                    <a href="<?php echo ("lien4.php")?>">lien 4</a>
+                <li id="navbar-content">
+                    <a href="<?php echo ("lien4.php")?>"></a>
                 </li>
             </ul>
         </nav>

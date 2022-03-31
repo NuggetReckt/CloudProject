@@ -1,9 +1,7 @@
 <footer>
     <div id="footer">
         <ul>
-            <li>
-                a
-            </li>
+            <li></li>
         </ul>
     </div>
 </footer>

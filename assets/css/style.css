@@ -1,20 +1,55 @@
 ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #2e81e2;
 }
+
 li {
-    list-style: none;
+    float: left;
 }
-a {
+
+li a {
+    transition: 0.5s;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: police_custom_2, serif;
 }
-#navbar {
-    margin: 0;
-    padding: 0;
-    background-color: blue;
+
+li a:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: #2e81e2;
 }
+
+.name {
+    float: left;
+    border-right: 1px solid #FFFF;
+}
+
 #footer {
     margin: 0;
     padding: 0;
     background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+
+@font-face {
+    font-family: police_custom;
+    src: url("../fonts/Staatliches-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_2;
+    src: url("../fonts/Mont-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_3;
+    src: url("../fonts/Mont-ExtraLight.otf") format("opentype");
 }
