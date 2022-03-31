@@ -23,9 +23,6 @@
                 <li id="navbar-content">
                     <a href="<?php echo ("lien3.php")?>"></a>
                 </li>
-                <li id="navbar-content">
-                    <a href="<?php echo ("lien4.php")?>"></a>
-                </li>
             </ul>
         </nav>
     </div>
