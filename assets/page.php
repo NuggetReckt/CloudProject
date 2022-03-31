@@ -13,9 +13,8 @@ class Page {
     function setTitle() {
         $title = $this->title;
         $name = $this->name;
-        if ($title !== null) {
-            $name = "$title - $name";
-        }
+
+        $name = "$name - $title";
         echo "<title>$name</title>";
     }
 }
