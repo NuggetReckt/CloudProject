@@ -18,7 +18,7 @@
                     <a href="<?php echo ("index.php")?>">CloudProject</a>
                 </li>
                 <li class="navbar-content" id="update">
-                    <a href="<?php echo ("upload.php")?>">Upload</a>
+                    <a href="<?php echo ("upload.php")?>">Start uploading</a>
                 </li>
                 <li class="navbar-content" id="about">
                     <a href="<?php echo ("about.php")?>">About</a>

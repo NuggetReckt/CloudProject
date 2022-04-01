@@ -1,11 +1,12 @@
 <?php
 
 class Insert {
-    function __construct($email, $password, $password_confirm) {
+    function __construct($username ,$email, $password, $password_confirm) {
         ini_set('default_charset', 'utf-8');
 
         require_once "database.php";
 
+        $this->username = $username;
         $this->email = $email;
         $this->password = $password;
         $this->password_confirm = $password_confirm;

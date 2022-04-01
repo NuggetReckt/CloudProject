@@ -5,4 +5,4 @@ $page = new Page("Login", "CloudProject");
 
 $page->setTitle();
 
-$login = new Check("", "", "");
+$login = new Check($_GET['email'], );
