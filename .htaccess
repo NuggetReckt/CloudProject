@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^home$ index.php [NC]
+RewriteRule ^about-us$ about.php [NC]
+RewriteRule ^login$ login.php [NC]
+RewriteRule ^register$ register.php [NC]
+RewriteRule ^upload$ upload.php [NC]
