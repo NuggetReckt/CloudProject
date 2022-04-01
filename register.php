@@ -1,9 +1,9 @@
 <?php
 require_once "./assets/page.php";
-require_once "./assets/insert.php";
+require_once "./assets/requests.php";
 
 $page = new Page("Register", "CloudProject");
 
 $page->setTitle();
 
-$insert = new Insert("", "", "", "");
+$req = new Requests("", "", "", "");

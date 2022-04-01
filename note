@@ -1,0 +1,17 @@
+create table user
+(
+    id       int         null,
+    name     VARCHAR(10) null,
+    password int         null,
+    email    varchar(20) null,
+    constraint user_pk
+        primary key (id)
+);
+
+create unique index user_email_uindex
+    on user (email);
+
+create unique index user_name_uindex
+    on user (name);
+
+");

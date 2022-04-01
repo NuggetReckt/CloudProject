@@ -15,12 +15,11 @@ class Database {
         $this->server = "localhost";
     }
 
-    function connect() {
-
+    function isConnected() {
         $link = mysqli_connect($this->server, $this->user, $this->mdp, $this->db);
 
         if ($link) {
-            echo "connexion établie";
+            return true;
         } else {
             die (mysqli_connect_error());
         }
