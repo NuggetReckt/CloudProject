@@ -24,7 +24,7 @@ class Insert {
                 return;
             }
 
-            $req = mysqli_query($link, "INSERT INTO user(nom,prenom,email,passwd) VALUES ('$nom','$email','$password')");
+            $req = mysqli_query($link, "INSERT INTO user(nom,email,password) VALUES ('$nom','$email','$password')");
 
             echo "Compte créé";
         }
