@@ -1,7 +1,9 @@
 <?php
 
-class Requests {
-    function __construct($username ,$email, $password, $password_confirm) {
+class Requests
+{
+    function __construct($username, $email, $password, $password_confirm)
+    {
         ini_set('default_charset', 'utf-8');
 
         require_once "database.php";
@@ -13,7 +15,8 @@ class Requests {
 
     }
 
-    function insert() {
+    function insert()
+    {
         if (isset($_GET["nom"]) && isset($_GET["email"]) && isset($_GET["password"]) && isset($_GET["password_confirm"])) {
             $nom = $_GET["nom"];
             $email = $_GET["email"];
@@ -30,9 +33,10 @@ class Requests {
             echo "Compte créé";
         }
     }
-    function login() {
-        if (isset($this->email) && isset($this->password)) {
 
+    function login()
+    {
+        if (isset($this->email) && isset($this->password)) {
             $email = $this->email;
             $password = $this->password;
 
@@ -42,7 +46,7 @@ class Requests {
                 $paswd = $row['passwd'];
             }
 
-            if ($this->password == $paswd) {
+            if ($password == $paswd) {
                 echo "Mot de passe est correct.";
             } else {
                 echo "Mot de passe incorrect.";
@@ -50,10 +54,21 @@ class Requests {
         }
     }
 
-    function isLogged() {
+    function isLogged(): bool
+    {
 
+        return true;
     }
-    function isRegistered() {
 
+    function isRegistered(): bool
+    {
+        $email = $this->email;
+
+        $req = mysqli_query($link, "SELECT email FROM user WHERE email='$email'");
+
+        if ($req == $email) {
+            echo "Un compte à déjà été enregistré avec cet email.";
+        }
+        return true;
     }
 }
