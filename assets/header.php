@@ -32,17 +32,6 @@
             </ul>
         </nav>
     </div>
-    <div id="side-bar">
-        <div id="logo-name">
-            <img id="logo" src="<?php echo ("assets/img/CloudProject_logo_0.1.png")?>" alt="logo">CloudProject
-        </div>
-        <br>
-        <ul class="sidebar-ul">
-            <li class="sidebar-content" id="plus">
-                <a href="<?php echo ("upload.php")?>"><img src="<?php echo ("assets/img/plus.png")?>" alt="plus" style="width: 50px"></a>
-            </li>
-        </ul>
-    </div>
 </header>
 
 <main>

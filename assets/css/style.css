@@ -1,8 +1,10 @@
-.navbar-ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+.navbar-ul {
     background-color: #2e81e2;
 }
 
@@ -59,22 +61,6 @@
 
 #footer-content {
     text-align: center;
-}
-
-#side-bar {
-    border-radius: 0 0 5px 0;
-    width: 300px;
-    margin: 0;
-    padding: 5px;
-    background-color: #c3fdff;
-    max-height: 1080px;
-}
-
-.sidebar-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
 @font-face {
