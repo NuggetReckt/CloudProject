@@ -1,10 +1,21 @@
+main, nav, #footer{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+span {
+    font-family: police_custom_3, serif;
+    font-size: 14px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.navbar-ul {
+
+#navbar, footer {
     background-color: #2e81e2;
 }
 
@@ -40,26 +51,16 @@ ul {
     float: right;
 }
 
-#footer {
-    margin: 0;
-    padding: 0;
-    background-color: #2e81e2;
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
     bottom: 0;
 }
 
-#logo-name {
-    font-family: police_custom_2, serif;
-    font-size: 32px;
-    color: black;
-}
-
-#logo {
-    vertical-align: middle;
-    width: 50px;
-    padding-right: 4px;
-}
-
 #footer-content {
+    color: white;
+    font-family: police_custom_3, serif;
+    font-size: 14px;
     text-align: center;
 }
 

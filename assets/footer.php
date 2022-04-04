@@ -1,7 +1,7 @@
 <footer>
     <div id="footer">
         <ul id="footer-content">
-            <li>Développé par NuggetReckt</li>
+            <li><span>Site developpe avec ❤ par NuggetReckt</span></li>
         </ul>
     </div>
 </footer>
