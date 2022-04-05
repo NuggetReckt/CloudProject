@@ -15,26 +15,7 @@ class Requests
 
     }
 
-    function insert()
-    {
-        if (isset($_GET["nom"]) && isset($_GET["email"]) && isset($_GET["password"]) && isset($_GET["password_confirm"])) {
-            $nom = $_GET["nom"];
-            $email = $_GET["email"];
-            $password = $_GET["password"];
-            $password_confirm = $_GET["password_confirm"];
-
-            if ($password != $password_confirm) {
-                echo "Vos deux mots de passes doivent être indentiques.";
-                return;
-            }
-
-            $req = mysqli_query($link, "INSERT INTO user(nom,email,password) VALUES ('$nom','$email','$password')");
-
-            echo "Compte créé";
-        }
-    }
-
-    function login()
+    function login($email, $password)
     {
         if (isset($this->email) && isset($this->password)) {
             $email = $this->email;
@@ -48,16 +29,35 @@ class Requests
 
             if ($password == $paswd) {
                 echo "Mot de passe est correct.";
+
+                $this->isLogged();
             } else {
                 echo "Mot de passe incorrect.";
             }
         }
     }
 
-    function isLogged(): bool
+    function insert()
     {
+        if (isset($_GET["name"]) && isset($_GET["email"]) && isset($_GET["password"]) && isset($_GET["password_confirm"])) {
+            $name = $_GET["name"];
+            $email = $_GET["email"];
+            $password = $_GET["password"];
+            $password_confirm = $_GET["password_confirm"];
 
-        return true;
+            if ($password != $password_confirm) {
+                echo "Vos deux mots de passes doivent être indentiques.";
+                return;
+            }
+
+            $req = mysqli_query($link, "INSERT INTO user(name,email,password) VALUES ('$name','$email','$password')");
+
+            echo "Compte créé";
+
+            $this->isRegistered();
+
+            $this->login($this->email, $this->password);
+        }
     }
 
     function isRegistered(): bool
@@ -68,7 +68,18 @@ class Requests
 
         if ($req == $email) {
             echo "Un compte à déjà été enregistré avec cet email.";
+            return false;
         }
         return true;
+    }
+
+    function isLogged(): bool
+    {
+        if ("CONDITION") {
+            echo "Vous êtes déjà connecté.";
+            return false;
+        }
+        return true;
+
     }
 }
