@@ -6,4 +6,4 @@ $page = new Page("Login", "CloudProject");
 
 $page->setTitle();
 
-$req = new Requests("", "", "", "");
+$req = new Requests($_GET["name"], $_GET["email"], $_GET["password"], $_GET["password_confirm"]);

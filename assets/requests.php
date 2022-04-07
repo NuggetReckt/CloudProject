@@ -15,7 +15,7 @@ class Requests
 
     }
 
-    function login($email, $password)
+    function login()
     {
         if (isset($this->email) && isset($this->password)) {
             $email = $this->email;
@@ -26,7 +26,7 @@ class Requests
             while ($row = mysqli_fetch_assoc($req)) {
                 $paswd = $row['passwd'];
             }
-
+v
             if ($password == $paswd) {
                 echo "Mot de passe est correct.";
 
@@ -39,11 +39,11 @@ class Requests
 
     function insert()
     {
-        if (isset($_GET["name"]) && isset($_GET["email"]) && isset($_GET["password"]) && isset($_GET["password_confirm"])) {
-            $name = $_GET["name"];
-            $email = $_GET["email"];
-            $password = $_GET["password"];
-            $password_confirm = $_GET["password_confirm"];
+        if (isset($this->username) && isset($this->email) && isset($this->password) && isset($this->password_confirm)) {
+            $name = $this->username;
+            $email = $this->email;
+            $password = $this->password;
+            $password_confirm = $this->password_confirm;
 
             if ($password != $password_confirm) {
                 echo "Vos deux mots de passes doivent être indentiques.";
