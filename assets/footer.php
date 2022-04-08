@@ -1,3 +1,5 @@
+</div>
+</main>
 <footer>
     <div id="footer">
         <ul id="footer-content">

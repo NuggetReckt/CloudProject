@@ -1,5 +1,7 @@
 <?php
 
+use JetBrains\PhpStorm\NoReturn;
+
 class Redirect
 {
     function __construct()
@@ -10,7 +12,7 @@ class Redirect
         require_once "requests.php";
     }
 
-    function main()
+    #[NoReturn] function checks()
     {
 
         $req = new Requests("", "", "", "");

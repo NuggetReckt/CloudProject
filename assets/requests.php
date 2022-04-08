@@ -26,7 +26,7 @@ class Requests
             while ($row = mysqli_fetch_assoc($req)) {
                 $paswd = $row['passwd'];
             }
-v
+
             if ($password == $paswd) {
                 echo "Mot de passe est correct.";
 
