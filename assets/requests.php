@@ -56,7 +56,7 @@ class Requests
 
             $this->isRegistered();
 
-            $this->login($this->email, $this->password);
+            $this->login($email, $password);
         }
     }
 

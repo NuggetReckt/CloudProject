@@ -1,14 +1,28 @@
+form {
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+
 fieldset {
-    border-radius: 5px 5px 0 0;
+    border-radius: 6px;
     margin: 0;
     padding: 10px;
-    border-bottom: none;
 }
 
 label {
     font-size: 19px;
     display: inline-block;
     text-align: left;
+}
+
+h1, label, input[type="submit"] {
+    font-family: police_custom, sans-serif;
+}
+
+p, input {
+    font-family: police_custom_1, sans-serif;
+    font-size: 15px;
 }
 
 h1, p {
@@ -26,9 +40,19 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 
 input[type="submit"] {
     color: #ffff;
-    background-color: rgb(55, 55, 255);
+    background-color: #2e81e2;
     border: none;
     width: 100%;
     font-size: 20px;
     margin-top: 15px;
+}
+
+@font-face {
+    font-family: police_custom;
+    src: url("../fonts/Mont-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_1;
+    src: url("../fonts/Mont-ExtraLight.otf") format("opentype");
 }
