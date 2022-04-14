@@ -12,7 +12,6 @@ fieldset {
 
 label {
     font-size: 19px;
-    display: inline-block;
     text-align: left;
 }
 
@@ -30,21 +29,37 @@ h1, p {
 }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
-    padding: 10px 0;
+    transition: 500ms;
+    padding: 10px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 94%;
     background-color: #ffff;
 }
 
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"]:focus-visible {
+    transition: 500ms;
+}
+
+.form-content {
+    margin: auto 10px;
+}
+
 input[type="submit"] {
+    transition: 500ms;
     color: #ffff;
     background-color: #2e81e2;
     border: none;
     width: 100%;
     font-size: 20px;
     margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    transition: 500ms;
+    background-color: black;
+    color: #2e81e2;
 }
 
 @font-face {

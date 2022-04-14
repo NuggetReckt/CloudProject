@@ -10,16 +10,18 @@ $page->setTitle();
 
     <form action="<?php echo "assets/requests.php" ?>" method="POST">
         <fieldset>
-            <h1>Connexion</h1>
-            <label>Email</label><br>
-            <input type="email" name="email" placeholder=" Votre Email">
-            <br>
-            <label>Mot de passe</label><br>
-            <input type="password" name="password" placeholder=" Votre mot de passe">
-            <br>
-            <input type="submit" value="Valider">
+            <div class="form-content">
+                <h1>Connection</h1>
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="enter your email">
+                <br>
+                <label>Password</label><br>
+                <input type="password" name="password" placeholder="enter your password">
+                <br>
+                <input type="submit" value="Login">
+            </div>
         </fieldset>
-        <p class="footer">Vous n'avez pas de compte ? <a href="<?php echo "register.php" ?>">Inscrivez-vous ici</a></p>
+        <p class="footer">Not registered? <a href="<?php echo "register.php" ?>">Create an account here</a></p>
     </form>
 
 <?php

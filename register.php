@@ -10,25 +10,29 @@ $page->setTitle();
 
     <form action="<?php echo "assets/requests.php" ?>" method="POST">
         <fieldset>
-            <h1>Inscription</h1>
-            <label>Nom</label><br>
-            <input type="text" name="name" placeholder="Votre Nom">
-            <br>
-            <label>Email</label><br>
-            <input type="email" name="email" placeholder="Votre Email">
-            <br>
-            <label>Mot de passe</label><br>
-            <input type="password" name="password" placeholder="Votre mot de passe">
-            <br>
-            <label>Confirmer le mot de passe</label><br>
-            <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe">
-            <br>
-            <input type="submit" value="S'inscrire">
-            <br>
-            <p id="cgu">En Cliquant sur le bouton "S'inscrire", vous acceptez de vous conformer a nos<br><a href="#">Conditions
-                    d'Utilisation</a>.</p>
+            <div class="form-content">
+                <h1>Register</h1>
+                <label>Name<br>
+                    <input type="text" name="name" placeholder="please enter your name">
+                </label>
+                <br>
+                <label>Email<br>
+                    <input type="email" name="email" placeholder="please enter your email">
+                </label>
+                <br>
+                <label>Password<br>
+                    <input type="password" name="password" placeholder="please enter your password">
+                </label>
+                <br>
+                <label>Confirm password</label><br>
+                <input type="password" name="password_confirm" placeholder="please confirm your password">
+                <br>
+                <input type="submit" value="Register">
+                <br>
+                <p id="cgu">By clicking on the button "Register", you accept our <a href="#">Terms of use</a>.</p>
+            </div>
         </fieldset>
-        <p class="footer">Vous avez deja un compte ? <a href="<?php echo "login.php" ?>">Connectez-vous ici</a></p>
+        <p class="footer">Already have an account? <a href="<?php echo "login.php" ?>">Connect here</a></p>
     </form>
 
 <?php
