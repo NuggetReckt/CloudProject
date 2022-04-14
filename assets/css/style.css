@@ -24,7 +24,7 @@ ul {
 }
 
 .navbar-content a {
-    transition: 0.5s;
+    transition: 500s;
     display: block;
     color: white;
     text-align: center;
@@ -34,7 +34,7 @@ ul {
 }
 
 .navbar-content a:hover {
-    transition: 0.5s;
+    transition: 500ms;
     background-color: black;
     color: #2e81e2;
 }
