@@ -12,11 +12,13 @@ $page->setTitle();
         <fieldset>
             <div class="form-content">
                 <h1>Connection</h1>
-                <label>Email</label><br>
-                <input type="email" name="email" placeholder="enter your email">
+                <label>Email<br>
+                <input type="email" name="email" class="input" placeholder="enter your email" required="">
+                </label>
                 <br>
-                <label>Password</label><br>
-                <input type="password" name="password" placeholder="enter your password">
+                <label>Password<br>
+                <input type="password" name="password" class="input" placeholder="enter your password" required="">
+                </label>
                 <br>
                 <input type="submit" value="Login">
             </div>

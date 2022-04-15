@@ -1,4 +1,4 @@
-main, nav, #footer{
+main, nav {
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -24,7 +24,7 @@ ul {
 }
 
 .navbar-content a {
-    transition: 500s;
+    transition: 500ms;
     display: block;
     color: white;
     text-align: center;

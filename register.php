@@ -13,19 +13,20 @@ $page->setTitle();
             <div class="form-content">
                 <h1>Register</h1>
                 <label>Name<br>
-                    <input type="text" name="name" placeholder="please enter your name">
+                    <input type="text" name="name" class="input" placeholder="please enter your name" required="">
                 </label>
                 <br>
                 <label>Email<br>
-                    <input type="email" name="email" placeholder="please enter your email">
+                    <input type="email" name="email" class="input" placeholder="please enter your email" required="">
                 </label>
                 <br>
                 <label>Password<br>
-                    <input type="password" name="password" placeholder="please enter your password">
+                    <input type="password" name="password" class="input" placeholder="please enter your password" required="">
                 </label>
                 <br>
-                <label>Confirm password</label><br>
-                <input type="password" name="password_confirm" placeholder="please confirm your password">
+                <label>Confirm password<br>
+                <input type="password" name="password_confirm" class="input" placeholder="please confirm your password" required="">
+                </label>
                 <br>
                 <input type="submit" value="Register">
                 <br>

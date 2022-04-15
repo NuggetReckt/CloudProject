@@ -5,7 +5,8 @@ form {
 }
 
 fieldset {
-    border-radius: 6px;
+    border: 1px solid black;
+    border-radius: 7px;
     margin: 0;
     padding: 10px;
 }
@@ -29,17 +30,17 @@ h1, p {
 }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 5px;
-    transition: 500ms;
     padding: 10px;
     margin-bottom: 10px;
     width: 94%;
     background-color: #ffff;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="submit"]:focus-visible {
-    transition: 500ms;
+.input:focus,
+.input:active {
+    border: 1px solid #2e81e2;
 }
 
 .form-content {
