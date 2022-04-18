@@ -80,6 +80,5 @@ class Requests
             return false;
         }
         return true;
-
     }
 }
