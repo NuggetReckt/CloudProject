@@ -5,4 +5,12 @@ $page = new Page("About Us", "CloudProject");
 
 $page->setHeader();
 $page->setTitle();
+?>
+
+<div class="page-title">
+    <h1 class="h1-page-title">About Us</h1>
+</div>
+
+<?php
 $page->setFooter();
+?>

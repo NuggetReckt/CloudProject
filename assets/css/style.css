@@ -51,6 +51,16 @@ ul {
     float: right;
 }
 
+.page-title {
+    margin: 35px auto;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+.h1-page-title {
+    width: max-content;
+    margin: 20px auto;
+}
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
