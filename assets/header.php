@@ -26,12 +26,26 @@
                 <li class="navbar-content" id="about">
                     <a href="<?php echo ("about.php")?>">About</a>
                 </li>
-                <li class="navbar-content" id="register">
-                    <a href="<?php echo ("register.php")?>">Register</a>
-                </li>
-                <li class="navbar-content" id="login">
-                    <a href="<?php echo ("login.php")?>">Login</a>
-                </li>
+                <?php
+                require_once "requests.php";
+
+                $request = new Requests("", "", "", "");
+
+                if ($request->isLogged() == false) {
+                    echo "<li class='navbar-content' id='register'>";
+                    echo "    <a href='register.php'>Register</a>";
+                    echo "</li>";
+
+                    echo "<li class='navbar-content' id='login'>";
+                    echo "    <a href='login.php'>Login</a>";
+                    echo "</li>";
+                }
+                if ($request->isLogged() == true) {
+                    echo "<li class='navbar-content' id='logged'>";
+                    echo "    <a href='account.php'>", $request->username, "</a>";
+                    echo "</li>";
+                }
+                ?>
             </ul>
         </nav>
     </div>

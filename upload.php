@@ -12,4 +12,12 @@ $page = new Page("Upload", "CloudProject");
 
 $page->setHeader();
 $page->setTitle();
+?>
+
+<div class="">
+
+</div>
+
+<?php
 $page->setFooter();
+?>

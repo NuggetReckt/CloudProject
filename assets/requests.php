@@ -76,7 +76,7 @@ class Requests
     function isLogged(): bool
     {
         if ("CONDITION") {
-            echo "Vous êtes déjà connecté.";
+            //echo "Vous n'êtes pas connecté.";
             return false;
         }
         return true;

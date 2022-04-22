@@ -1,6 +1,7 @@
 <?php
 require_once "./assets/page.php";
 require_once "./assets/requests.php";
+require_once "./assets/redirect.php";
 
 $page = new Page("Register", "CloudProject");
 
@@ -8,12 +9,12 @@ $page->setHeader();
 $page->setTitle();
 ?>
 
-    <form action="<?php echo "assets/requests.php" ?>" method="POST">
+    <form action="<?php echo "register.php" ?>" method="POST">
         <fieldset>
             <div class="form-content">
                 <h1>Register</h1>
-                <label>Name<br>
-                    <input type="text" name="name" class="input" placeholder="please enter your name" required="">
+                <label>Username<br>
+                    <input type="text" name="name" class="input" placeholder="please enter your username" required="">
                 </label>
                 <br>
                 <label>Email<br>
@@ -25,7 +26,7 @@ $page->setTitle();
                 </label>
                 <br>
                 <label>Confirm password<br>
-                <input type="password" name="password_confirm" class="input" placeholder="please confirm your password" required="">
+                    <input type="password" name="password_confirm" class="input" placeholder="please confirm your password" required="">
                 </label>
                 <br>
                 <input type="submit" value="Register">
@@ -39,6 +40,9 @@ $page->setTitle();
 <?php
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
     $req = new Requests($_POST["name"], $_POST["email"], $_POST["password"], $_POST["password_confirm"]);
+
+    $redirect = new Redirect();
+    $redirect->redirectIfRegistered();
 }
 
 $page->setFooter();

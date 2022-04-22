@@ -1,6 +1,7 @@
 <?php
 require_once "./assets/page.php";
 require_once "./assets/requests.php";
+require_once "./assets/redirect.php";
 
 $page = new Page("Login", "CloudProject");
 
@@ -8,16 +9,16 @@ $page->setHeader();
 $page->setTitle();
 ?>
 
-    <form action="<?php echo "assets/requests.php" ?>" method="POST">
+    <form action="<?php echo "login.php" ?>" method="POST">
         <fieldset>
             <div class="form-content">
                 <h1>Connection</h1>
                 <label>Email<br>
-                <input type="email" name="email" class="input" placeholder="enter your email" required="">
+                    <input type="email" name="email" class="input" placeholder="enter your email" required="">
                 </label>
                 <br>
                 <label>Password<br>
-                <input type="password" name="password" class="input" placeholder="enter your password" required="">
+                    <input type="password" name="password" class="input" placeholder="enter your password" required="">
                 </label>
                 <br>
                 <input type="submit" value="Login">
@@ -29,6 +30,9 @@ $page->setTitle();
 <?php
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
     $req = new Requests($_POST["name"], $_POST["email"], $_POST["password"], $_POST["password_confirm"]);
+
+    $redirect = new Redirect();
+    $redirect->redirectIfLogged();
 }
 
 $page->setFooter();

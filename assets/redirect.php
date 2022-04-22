@@ -1,7 +1,4 @@
 <?php
-
-use JetBrains\PhpStorm\NoReturn;
-
 class Redirect
 {
     function __construct()
@@ -12,26 +9,41 @@ class Redirect
         require_once "requests.php";
     }
 
-    #[NoReturn] function checks()
+    public function redirectIfLogged(): bool
     {
 
         $req = new Requests("", "", "", "");
 
         $logged = "index.php";
         $not_logged = "login.php";
-        $not_registered = "register.php";
 
         if ($req->isLogged()) {
             header("Location: .$logged");
+            echo "succès";
+            return true;
         } else {
             header("Location: .$not_logged");
+            echo "echec";
+            return false;
         }
+    }
+
+    public function redirectIfRegistered(): bool
+    {
+
+        $req = new Requests("", "", "", "");
+
+        $registered = "index.php";
+        $not_registered = "register.php";
 
         if ($req->isRegistered()) {
-            header("Location: .$logged");
+            header("Location: .$registered");
+            echo "succès";
+            return true;
         } else {
             header("Location: .$not_registered");
+            echo "echec";
+            return false;
         }
-        die();
     }
 }
