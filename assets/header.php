@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="<?php echo ("assets/css/normalize.css") ?>">
 
     <link rel="stylesheet" href="<?php echo ("assets/css/style.css") ?>">
-    <link rel="stylesheet" href="<?php echo ("assets/css/login.css") ?>">
+    <link rel="stylesheet" href="<?php echo ("assets/css/user-form.css") ?>">
+    <link rel="stylesheet" href="<?php echo ("assets/css/upload.css") ?>">
 </head>
 
 <body>

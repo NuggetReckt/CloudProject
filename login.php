@@ -9,7 +9,7 @@ $page->setHeader();
 $page->setTitle();
 ?>
 
-    <form action="<?php echo "login.php" ?>" method="POST">
+    <form action="<?php echo "login.php" ?>" method="POST" class="user-form">
         <fieldset>
             <div class="form-content">
                 <h1>Connection</h1>

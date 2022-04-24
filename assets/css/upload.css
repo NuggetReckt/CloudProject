@@ -1,0 +1,14 @@
+@font-face {
+    font-family: police_custom;
+    src: url("../fonts/Staatliches-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_2;
+    src: url("../fonts/Mont-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_3;
+    src: url("../fonts/Mont-ExtraLight.otf") format("opentype");
+}
