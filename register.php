@@ -9,7 +9,7 @@ $page->setHeader();
 $page->setTitle();
 ?>
 
-    <form action="<?php echo "register.php" ?>" method="POST">
+    <form action="<?php echo "register.php" ?>" method="POST" class="user-form">
         <fieldset>
             <div class="form-content">
                 <h1>Register</h1>

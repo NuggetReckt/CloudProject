@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,7 @@
 
                 $request = new Requests("", "", "", "");
 
-                if ($request->isLogged() == false) {
+                if (!$request->isLogged()) {
                     echo "<li class='navbar-content' id='register'>";
                     echo "    <a href='register.php'>Register</a>";
                     echo "</li>";
@@ -40,7 +40,7 @@
                     echo "    <a href='login.php'>Login</a>";
                     echo "</li>";
                 }
-                if ($request->isLogged() == true) {
+                if ($request->isLogged()) {
                     echo "<li class='navbar-content' id='logged'>";
                     echo "    <a href='account.php'>", $request->username, "</a>";
                     echo "</li>";
