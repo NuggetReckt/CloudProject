@@ -18,12 +18,12 @@ class Redirect
         $not_logged = "login.php";
 
         if ($req->isLogged()) {
-            header("Location: .$logged");
             echo "succès";
+            header("Location: .$logged");
             return true;
         } else {
-            header("Location: .$not_logged");
             echo "echec";
+            header("Location: .$not_logged");
             return false;
         }
     }
