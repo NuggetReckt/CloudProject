@@ -5,9 +5,9 @@ require_once "./assets/requests.php";
 $request = new Requests("", "", "", "");
 
 //A DECOMMENTER QUAND FINI
-if (!$request->isLogged()) {
+/*if (!$request->isLogged()) {
     header("Location: login.php");
-}
+}*/
 
 $page = new Page("Upload", "CloudProject");
 
