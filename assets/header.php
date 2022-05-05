@@ -6,8 +6,8 @@
     <meta name="author" content="NuggetReckt">
 
     <link rel="shortcut icon" href="<?php echo("assets/img/CloudProject_logo_0.1.png") ?>">
-    <link rel="stylesheet" href="<?php echo("assets/css/normalize.css") ?>">
 
+    <link rel="stylesheet" href="<?php echo("assets/css/normalize.css") ?>">
     <link rel="stylesheet" href="<?php echo("assets/css/style.css") ?>">
     <link rel="stylesheet" href="<?php echo("assets/css/user-form.css") ?>">
     <link rel="stylesheet" href="<?php echo("assets/css/upload.css") ?>">
@@ -30,7 +30,7 @@
                 <?php
                 require_once "requests.php";
 
-                $request = new Requests("", "", "", "");
+                $request = new Requests("", "", "", "", "");
 
                 if (!$request->isLogged()) {
                     echo "<li class='navbar-content' id='register'>";
@@ -42,8 +42,15 @@
                     echo "</li>";
                 }
                 if ($request->isLogged()) {
-                    echo "<li class='navbar-content' id='logged'>";
-                    echo "    <a href='account.php'>", $request->username, "</a>";
+                    echo "<li class='navbar-content' id='account'>";
+                    echo "    <a href='account.php'>";
+                        if ($request->isPfpSet()) {
+                            echo "<img src='$request->userpfp' alt='user-pfp' id='user-pfp'> ";
+                        }
+                        else {
+                            echo "<img src='assets/img/user-default.png' alt='user-pfp' id='user-pfp'> ";
+                        }
+                    echo $request->username, "</a>";
                     echo "</li>";
                 }
                 ?>

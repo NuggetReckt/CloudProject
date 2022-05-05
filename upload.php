@@ -2,12 +2,13 @@
 require_once "./assets/page.php";
 require_once "./assets/requests.php";
 
-$request = new Requests("", "", "", "");
+$request = new Requests("", "", "", "", "");
 
 //ENLEVER COMMENTAIRES QUAND FINI
-/*if (!$request->isLogged()) {
+
+if (!$request->isLogged()) {
     header("Location: login.php");
-}*/
+}
 
 $page = new Page("Upload", "CloudProject");
 

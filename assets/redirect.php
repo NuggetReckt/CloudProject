@@ -20,11 +20,11 @@ class Redirect
 
         if ($req->isLogged()) {
             echo "succès";
-            header("Location: .$logged");
+            //header("Location: .$logged");
             return true;
         } else {
             echo "echec";
-            header("Location: .$not_logged");
+            //header("Location: .$not_logged");
             return false;
         }
     }

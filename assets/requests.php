@@ -2,7 +2,7 @@
 
 class Requests
 {
-    function __construct($username, $email, $password, $password_confirm)
+    function __construct($username, $email, $password, $password_confirm, $userpfp)
     {
         ini_set('default_charset', 'utf-8');
 
@@ -12,6 +12,7 @@ class Requests
         $this->email = $email;
         $this->password = $password;
         $this->password_confirm = $password_confirm;
+        $this->userpfp = $userpfp;
 
     }
 
@@ -75,10 +76,15 @@ class Requests
 
     function isLogged(): bool
     {
-        if ("CONDITION") {
-            //echo "Vous n'êtes pas connecté.";
-            return false;
-        }
-        return true;
+        return false;
+    }
+
+    function isPfpSet(): bool
+    {
+        //Uncomment for Testing
+        //$this->userpfp = "https://play.noskillworld.fr/static/img/logo_nsw.png";
+        //$this->username = "TEST";
+
+        return false;
     }
 }
