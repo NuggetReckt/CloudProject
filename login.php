@@ -28,13 +28,13 @@ $page->setTitle();
     </form>
 
 <?php
-    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
 
-        $req = new Requests($_POST["name"], $_POST["email"], $_POST["password"], $_POST["password_confirm"]);
+    $req = new Requests($_POST["name"], $_POST["email"], $_POST["password"], $_POST["password_confirm"]);
 
-        $redirect = new Redirect();
-        $redirect->redirectIfLogged();
-    }
+    $redirect = new Redirect();
+    $redirect->redirectIfLogged();
+}
 
 $page->setFooter();
 ?>

@@ -1,6 +1,9 @@
 <?php
-class Database {
-    function __construct($user, $mdp, $db, $server) {
+
+class Database
+{
+    function __construct($user, $mdp, $db, $server)
+    {
 
         $this->user = $user;
         $this->user = "root";
@@ -15,7 +18,8 @@ class Database {
         $this->server = "localhost";
     }
 
-    function isConnected() {
+    function isConnected()
+    {
         $link = mysqli_connect($this->server, $this->user, $this->mdp, $this->db);
 
         if ($link) {

@@ -22,11 +22,13 @@ $page->setTitle();
                 </label>
                 <br>
                 <label>Password<br>
-                    <input type="password" name="password" class="input" placeholder="please enter your password" required="">
+                    <input type="password" name="password" class="input" placeholder="please enter your password"
+                           required="">
                 </label>
                 <br>
                 <label>Confirm password<br>
-                    <input type="password" name="password_confirm" class="input" placeholder="please confirm your password" required="">
+                    <input type="password" name="password_confirm" class="input"
+                           placeholder="please confirm your password" required="">
                 </label>
                 <br>
                 <input type="submit" value="Register">
@@ -39,6 +41,7 @@ $page->setTitle();
 
 <?php
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
+
     $req = new Requests($_POST["name"], $_POST["email"], $_POST["password"], $_POST["password_confirm"]);
 
     $redirect = new Redirect();

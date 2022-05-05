@@ -4,7 +4,7 @@ require_once "./assets/requests.php";
 
 $request = new Requests("", "", "", "");
 
-//A DECOMMENTER QUAND FINI
+//ENLEVER COMMENTAIRES QUAND FINI
 /*if (!$request->isLogged()) {
     header("Location: login.php");
 }*/
@@ -15,7 +15,7 @@ $page->setHeader();
 $page->setTitle();
 ?>
 
-<div>
+<div class="app">
     <div class="upload-navbar">
         <ul>
             <li>Lien 1</li>

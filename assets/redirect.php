@@ -1,4 +1,5 @@
 <?php
+
 class Redirect
 {
     function __construct()

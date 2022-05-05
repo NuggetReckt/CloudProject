@@ -12,7 +12,6 @@ $page->setTitle();
 ?>
 
 
-
 <?php
 $page->setFooter();
 ?>
