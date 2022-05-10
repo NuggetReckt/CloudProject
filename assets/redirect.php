@@ -13,7 +13,7 @@ class Redirect
     public function redirectIfLogged(): bool
     {
 
-        $req = new Requests("", "", "", "");
+        $req = new Requests("", "", "", "", "");
 
         $logged = "index.php";
         $not_logged = "login.php";
@@ -32,7 +32,7 @@ class Redirect
     public function redirectIfRegistered(): bool
     {
 
-        $req = new Requests("", "", "", "");
+        $req = new Requests("", "", "", "", "");
 
         $registered = "index.php";
         $not_registered = "register.php";
