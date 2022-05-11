@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @property $name
+ * @property $title
+ */
 class Page
 {
     function __construct($title, $name)
