@@ -1,6 +1,6 @@
 <?php
 require_once "./assets/page.php";
-require_once "./assets/requests.php";
+require_once "./assets/database/requests.php";
 
 $request = new Requests("", "", "", "", "");
 

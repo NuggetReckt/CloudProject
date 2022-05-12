@@ -6,7 +6,7 @@ class Requests
     {
         ini_set('default_charset', 'utf-8');
 
-        require_once "database.php";
+        require_once "cnx.php";
 
         $this->username = $username;
         $this->email = $email;
@@ -16,7 +16,7 @@ class Requests
 
     }
 
-    function login()
+    function login(): void
     {
         if (isset($this->email) && isset($this->password)) {
             $email = $this->email;
@@ -38,7 +38,7 @@ class Requests
         }
     }
 
-    function insert()
+    function insert(): void
     {
         if (isset($this->username) && isset($this->email) && isset($this->password) && isset($this->password_confirm)) {
             $name = $this->username;

@@ -48,7 +48,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 }
 
 input[type="submit"] {
-    transition: 500ms;
+    transition: 1s;
     color: #ffff;
     background-color: #2e81e2;
     border: none;
@@ -58,7 +58,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    transition: 500ms;
+    transition: 1s;
     background-color: black;
     color: #2e81e2;
 }

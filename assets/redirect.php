@@ -7,7 +7,7 @@ class Redirect
         ini_set("default_charset", "utf-8");
 
         require_once "page.php";
-        require_once "requests.php";
+        require_once "database/requests.php";
     }
 
     public function redirectIfLogged(): bool
@@ -19,11 +19,11 @@ class Redirect
         $not_logged = "login.php";
 
         if ($req->isLogged()) {
-            echo "succès";
+            //echo "succès";
             //header("Location: .$logged");
             return true;
         } else {
-            echo "echec";
+            //echo "echec";
             //header("Location: .$not_logged");
             return false;
         }

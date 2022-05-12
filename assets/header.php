@@ -28,7 +28,7 @@
                     <a href="<?php echo("about.php") ?>">About</a>
                 </li>
                 <?php
-                require_once "requests.php";
+                require_once "database/requests.php";
 
                 $request = new Requests("", "", "", "", "");
 
