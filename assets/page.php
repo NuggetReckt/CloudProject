@@ -14,12 +14,12 @@ class Page
         $this->title = $title;
     }
 
-    public function setHeader()
+    public function setHeader(): void
     {
         require_once "header.php";
     }
 
-    public function setTitle()
+    public function setTitle(): void
     {
         $title = $this->title;
         $name = $this->name;
@@ -28,7 +28,7 @@ class Page
         echo "<title>$name</title>";
     }
 
-    public function setFooter()
+    public function setFooter(): void
     {
         require_once "footer.php";
     }

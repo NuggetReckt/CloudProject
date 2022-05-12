@@ -3,7 +3,7 @@
 <footer>
     <div id="footer">
         <ul id="footer-content">
-            <li><span>Site developpe avec ❤ par NuggetReckt</span></li>
+            <li><span>Developed with ❤ by NuggetReckt</span></li>
         </ul>
     </div>
 </footer>
