@@ -6,7 +6,6 @@ require_once "./assets/redirect.php";
 $page = new Page("Login", "CloudProject");
 
 $page->setHeader();
-$page->setTitle();
 ?>
 
     <form action="<?php echo "login.php" ?>" method="POST" class="user-form">

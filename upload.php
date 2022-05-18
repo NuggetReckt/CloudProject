@@ -13,7 +13,6 @@ $request = new Requests("", "", "", "", "");
 $page = new Page("Upload", "CloudProject");
 
 $page->setHeader();
-$page->setTitle();
 ?>
 
 <div class="app">

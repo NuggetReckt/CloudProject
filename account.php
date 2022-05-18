@@ -13,7 +13,6 @@ if (!$request->isLogged()) {
 $page = new Page("Account", "CloudProject");
 
 $page->setHeader();
-$page->setTitle();
 ?>
 
 
